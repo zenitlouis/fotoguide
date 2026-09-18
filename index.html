@@ -16,7 +16,7 @@
     <nav class="main-nav" aria-label="Hlavná navigácia">
       <a href="#top">Domov</a><a href="#guides">Ťaháky</a><a href="#method">Ako sa učiť</a>
     </nav>
-    <button class="theme-button" id="themeButton" type="button" aria-label="Prepnúť farebný režim">◐</button>
+    <div class="header-actions"><button class="language-button" id="languageButton" type="button" aria-label="Switch to English">EN</button><button class="theme-button" id="themeButton" type="button" aria-label="Prepnúť farebný režim">◐</button></div>
   </header>
 
   <main id="top">
@@ -58,31 +58,31 @@
 
     <div class="section-band" id="guides"><span></span><strong>Obsah zápisníka · 7 kapitol</strong><span></span></div>
     <section class="gallery" aria-label="Fotografické ťaháky">
-      <article class="guide" id="kontrola" data-category="foundation" data-title="Kontrola pred záberom" data-image="assets/kontrola-pred-zaberom.jpg">
+      <article class="guide" id="kontrola" data-key="checklist" data-category="foundation" data-title="Kontrola pred záberom" data-image="assets/kontrola-pred-zaberom.jpg" data-sk-image="assets/kontrola-pred-zaberom.jpg" data-en-image="assets/en/pre-shot-checklist.jpg">
         <button class="guide-open" type="button"><span class="guide-number">01</span><span class="guide-copy"><strong>Kontrola pred záberom</strong><small>Rutina, vďaka ktorej nič dôležité neprehliadneš.</small></span><span class="guide-arrow">↗</span></button>
         <div class="guide-preview"><img src="assets/kontrola-pred-zaberom.jpg" alt="Ťahák Kontrola pred záberom" loading="eager"></div>
       </article>
-      <article class="guide" id="expozicia" data-category="foundation" data-title="Expozičný trojuholník" data-image="assets/expozicny-trojuholnik.jpg">
+      <article class="guide" id="expozicia" data-key="exposure" data-category="foundation" data-title="Expozičný trojuholník" data-image="assets/expozicny-trojuholnik.jpg" data-sk-image="assets/expozicny-trojuholnik.jpg" data-en-image="assets/en/exposure-triangle.jpg">
         <button class="guide-open" type="button"><span class="guide-number">02</span><span class="guide-copy"><strong>Expozičný trojuholník</strong><small>Pochop vzťah medzi clonou, časom a ISO.</small></span><span class="guide-arrow">↗</span></button>
         <div class="guide-preview"><img src="assets/expozicny-trojuholnik.jpg" alt="Ťahák Expozičný trojuholník" loading="lazy"></div>
       </article>
-      <article class="guide" id="mesto" data-category="scene" data-title="Ľudia v meste" data-image="assets/ludia-v-meste.jpg">
+      <article class="guide" id="mesto" data-key="city" data-category="scene" data-title="Ľudia v meste" data-image="assets/ludia-v-meste.jpg" data-sk-image="assets/ludia-v-meste.jpg" data-en-image="assets/en/people-in-city.jpg">
         <button class="guide-open" type="button"><span class="guide-number">03</span><span class="guide-copy"><strong>Ľudia v meste</strong><small>Človek v prostredí, pohyb a mestský moment.</small></span><span class="guide-arrow">↗</span></button>
         <div class="guide-preview"><img src="assets/ludia-v-meste.jpg" alt="Ťahák Ľudia v meste" loading="lazy"></div>
       </article>
-      <article class="guide" id="reportaz" data-category="scene" data-title="Reportáž" data-image="assets/reportaz.jpg">
+      <article class="guide" id="reportaz" data-key="reportage" data-category="scene" data-title="Reportáž" data-image="assets/reportaz.jpg" data-sk-image="assets/reportaz.jpg" data-en-image="assets/en/reportage.jpg">
         <button class="guide-open" type="button"><span class="guide-number">04</span><span class="guide-copy"><strong>Reportáž</strong><small>Rozprávaj príbeh celkom, človekom a detailom.</small></span><span class="guide-arrow">↗</span></button>
         <div class="guide-preview"><img src="assets/reportaz.jpg" alt="Ťahák Reportáž" loading="lazy"></div>
       </article>
-      <article class="guide" id="portret" data-category="scene" data-title="Portrét" data-image="assets/portret.jpg">
+      <article class="guide" id="portret" data-key="portrait" data-category="scene" data-title="Portrét" data-image="assets/portret.jpg" data-sk-image="assets/portret.jpg" data-en-image="assets/en/portrait.jpg">
         <button class="guide-open" type="button"><span class="guide-number">05</span><span class="guide-copy"><strong>Portrét</strong><small>Oko, prirodzené svetlo a pokojné pozadie.</small></span><span class="guide-arrow">↗</span></button>
         <div class="guide-preview"><img src="assets/portret.jpg" alt="Ťahák Portrét" loading="lazy"></div>
       </article>
-      <article class="guide" id="krajina" data-category="scene" data-title="Krajina" data-image="assets/krajina.jpg">
+      <article class="guide" id="krajina" data-key="landscape" data-category="scene" data-title="Krajina" data-image="assets/krajina.jpg" data-sk-image="assets/krajina.jpg" data-en-image="assets/en/landscape.jpg">
         <button class="guide-open" type="button"><span class="guide-number">06</span><span class="guide-copy"><strong>Krajina</strong><small>Popredie, stred, pozadie a práca so svetlom.</small></span><span class="guide-arrow">↗</span></button>
         <div class="guide-preview"><img src="assets/krajina.jpg" alt="Ťahák Krajina" loading="lazy"></div>
       </article>
-      <article class="guide" id="architektura" data-category="scene" data-title="Architektúra" data-image="assets/architektura.jpg">
+      <article class="guide" id="architektura" data-key="architecture" data-category="scene" data-title="Architektúra" data-image="assets/architektura.jpg" data-sk-image="assets/architektura.jpg" data-en-image="assets/en/architecture.jpg">
         <button class="guide-open" type="button"><span class="guide-number">07</span><span class="guide-copy"><strong>Architektúra</strong><small>Perspektíva, rovné línie, rytmus a detaily.</small></span><span class="guide-arrow">↗</span></button>
         <div class="guide-preview"><img src="assets/architektura.jpg" alt="Ťahák Architektúra" loading="lazy"></div>
       </article>
