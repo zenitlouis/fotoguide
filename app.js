@@ -61,7 +61,7 @@ function showGuide(index){
   viewerImage.alt=`Fotografický ťahák: ${title}`;
   viewerPosition.textContent=`${currentIndex+1} / ${guides.length}`;
   downloadLink.href=image;
-  downloadLink.download=`${title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,'-')}.png`;
+  downloadLink.download=`${title.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,'-')}.jpg`;
   const detail=guideDetails[title];
   document.querySelector('#contextWhen').textContent=detail.when;
   document.querySelector('#contextStart').textContent=detail.start;

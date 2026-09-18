@@ -3,144 +3,99 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#11161d">
-  <meta name="description" content="Praktické fotografické ťaháky pre Canon EOS 100D.">
+  <meta name="theme-color" content="#f7f3ea">
+  <meta name="description" content="Praktický fotografický zápisník pre Canon EOS 100D.">
   <title>Fotografický zápisník</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2311161d'/%3E%3Ccircle cx='32' cy='34' r='15' fill='none' stroke='%23f3b25f' stroke-width='5'/%3E%3Ccircle cx='32' cy='34' r='6' fill='%2387bce9'/%3E%3Cpath d='M20 17h9l3-4h9l3 4h3a7 7 0 0 1 7 7v22H10V24a7 7 0 0 1 7-7z' fill='none' stroke='%23f4f0e8' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23201f1c'/%3E%3Ccircle cx='32' cy='34' r='14' fill='none' stroke='%23f7f3ea' stroke-width='5'/%3E%3Ccircle cx='32' cy='34' r='5' fill='%239b4d3d'/%3E%3Cpath d='M19 18h10l3-4h9l3 4h3a7 7 0 0 1 7 7v21H10V25a7 7 0 0 1 7-7z' fill='none' stroke='%23f7f3ea' stroke-width='4'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="color-proposal">
-  <div class="page-frame" aria-hidden="true"></div>
+<body>
+  <div class="site-frame" aria-hidden="true"></div>
   <header class="topbar">
-    <a class="brand" href="#top" aria-label="Fotografický zápisník – domov">
-      <span class="brand-mark" aria-hidden="true"></span>
-      <span>Fotografický zápisník</span>
-    </a>
-    <div class="top-actions">
-      <span class="counter" id="counter">7 ťahákov</span>
-      <button class="theme-button" id="themeButton" type="button" aria-label="Prepnúť farebný režim" title="Prepnúť farebný režim">
-        <span aria-hidden="true">◐</span>
-      </button>
-    </div>
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span><strong>Fotografický zápisník</strong><small>7 praktických ťahákov</small></span></a>
+    <nav class="main-nav" aria-label="Hlavná navigácia">
+      <a href="#top">Domov</a><a href="#guides">Ťaháky</a><a href="#method">Ako sa učiť</a>
+    </nav>
+    <button class="theme-button" id="themeButton" type="button" aria-label="Prepnúť farebný režim">◐</button>
   </header>
 
   <main id="top">
-    <section class="intro" aria-labelledby="pageTitle">
-      <p class="eyebrow">Canon EOS 100D · praktická príručka</p>
-      <h1 id="pageTitle">Menej tápať.<br><em>Viac fotografovať.</em></h1>
-      <p class="lede">Sedem vizuálnych ťahákov pre rozhodnutia, ktoré robíš pred stlačením spúšte. Vyber tému a otvor stránku na celú obrazovku.</p>
-      <div class="intro-note" aria-label="Obsah fotografického zápisníka">
-        <div class="index-head"><span>Obsah zápisníka</span><b>7 kapitol</b></div>
-        <nav class="chapter-index" aria-label="Prejsť na kapitolu">
-          <a href="#kontrola"><i>01</i><strong>Kontrola pred záberom</strong><em>Základná rutina</em></a>
-          <a href="#expozicia"><i>02</i><strong>Expozičný trojuholník</strong><em>Clona · čas · ISO</em></a>
-          <a href="#mesto"><i>03</i><strong>Ľudia v meste</strong><em>Street · 24 mm</em></a>
-          <a href="#reportaz"><i>04</i><strong>Reportáž</strong><em>Príbeh v 5 záberoch</em></a>
-          <a href="#portret"><i>05</i><strong>Portrét</strong><em>Človek · 40 mm</em></a>
-          <a href="#krajina"><i>06</i><strong>Krajina</strong><em>Priestor · svetlo</em></a>
-          <a href="#architektura"><i>07</i><strong>Architektúra</strong><em>Línie · geometria</em></a>
+    <section class="hero">
+      <img class="hero-photo" src="assets/hero-camera.jpg" alt="Fotoaparát, zápisníky a mapa na drevenom stole">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Canon EOS 100D · praktická príručka</p>
+        <h1>Menej tápať.<br><em>Viac fotografovať.</em></h1>
+        <p>Sedem ťahákov, ktoré ti pomôžu rýchlejšie pochopiť fotoaparát, lepšie vidieť svet a fotografovať s väčšou istotou.</p>
+        <nav class="filters" aria-label="Filtrovanie tém">
+          <button class="filter active" type="button" data-filter="all" aria-pressed="true">Všetko</button>
+          <button class="filter" type="button" data-filter="scene" aria-pressed="false">Situácie</button>
+          <button class="filter" type="button" data-filter="foundation" aria-pressed="false">Základy</button>
         </nav>
       </div>
-      <nav class="filters" aria-label="Filtrovanie tém">
-        <button class="filter active" type="button" data-filter="all" aria-pressed="true">Všetko</button>
-        <button class="filter" type="button" data-filter="scene" aria-pressed="false">Situácie</button>
-        <button class="filter" type="button" data-filter="foundation" aria-pressed="false">Základy</button>
-      </nav>
+      <aside class="chapter-card" aria-label="Obsah zápisníka">
+        <div class="chapter-head"><span>Obsah zápisníka</span><b>7 kapitol</b></div>
+        <nav class="chapter-index" aria-label="Prejsť na kapitolu">
+          <a href="#kontrola"><i>01</i><strong>Kontrola pred záberom</strong><span>→</span></a>
+          <a href="#expozicia"><i>02</i><strong>Expozičný trojuholník</strong><span>→</span></a>
+          <a href="#mesto"><i>03</i><strong>Ľudia v meste</strong><span>→</span></a>
+          <a href="#reportaz"><i>04</i><strong>Reportáž</strong><span>→</span></a>
+          <a href="#portret"><i>05</i><strong>Portrét</strong><span>→</span></a>
+          <a href="#krajina"><i>06</i><strong>Krajina</strong><span>→</span></a>
+          <a href="#architektura"><i>07</i><strong>Architektúra</strong><span>→</span></a>
+        </nav>
+      </aside>
     </section>
 
-    <section class="method" aria-labelledby="methodTitle">
-      <div class="method-heading">
-        <p class="eyebrow">Ako s tým pracovať</p>
-        <h2 id="methodTitle">Ťahák nie je recept.<br>Je to štartovací bod.</h2>
-      </div>
+    <section class="method" id="method">
+      <div class="method-title"><p>Spôsob práce</p><h2>Ťahák nie je recept.<br>Je to štartovací bod.</h2></div>
       <div class="method-steps">
-        <article><span>01</span><h3>Pred fotením</h3><p>Vyber si jednu tému. Zapamätaj si základné nastavenie a jednu vec, ktorú chceš sledovať.</p></article>
-        <article><span>02</span><h3>V teréne</h3><p>Nemeň všetko naraz. Najprv svetlo a kompozícia, potom clona, čas a ISO podľa pohybu.</p></article>
-        <article><span>03</span><h3>Po návrate</h3><p>Vyber tri vydarené a tri nevydarené zábery. Pri každom pomenuj konkrétny dôvod.</p></article>
+        <article><span>01</span><div><h3>Pred fotením</h3><p>Priprav sa, skontroluj nastavenia a pomenuj, čo chceš povedať.</p></div></article>
+        <article><span>02</span><div><h3>V teréne</h3><p>Používaj jeden ťahák, všímaj si svetlo a hľadaj lepšie uhly.</p></div></article>
+        <article><span>03</span><div><h3>Po návrate</h3><p>Vyber, uprav a pri každom zábere pomenuj, prečo funguje alebo nie.</p></div></article>
       </div>
     </section>
 
-    <div class="section-title"><span>Obsah zápisníka</span><span>7 kapitol</span></div>
-    <section class="gallery" id="gallery" aria-label="Fotografické ťaháky">
-      <article class="guide guide-featured" id="kontrola" data-category="foundation" data-title="Kontrola pred záberom" data-image="assets/kontrola-pred-zaberom.jpg">
-        <button class="guide-open" type="button" aria-label="Otvoriť Kontrolu pred záberom">
-          <span class="guide-number">01</span>
-          <span class="guide-copy"><span class="guide-kicker">Rutina v teréne</span><strong>Kontrola pred záberom</strong><span>Motív, svetlo, pozadie, ostrenie, čas a správny moment.</span></span>
-          <span class="guide-arrow" aria-hidden="true">↗</span>
-        </button>
-        <div class="guide-preview"><img src="assets/kontrola-pred-zaberom.jpg" alt="Ručne písaný ťahák Kontrola pred záberom" loading="eager"></div>
+    <div class="section-band" id="guides"><span></span><strong>Obsah zápisníka · 7 kapitol</strong><span></span></div>
+    <section class="gallery" aria-label="Fotografické ťaháky">
+      <article class="guide" id="kontrola" data-category="foundation" data-title="Kontrola pred záberom" data-image="assets/kontrola-pred-zaberom.jpg">
+        <button class="guide-open" type="button"><span class="guide-number">01</span><span class="guide-copy"><strong>Kontrola pred záberom</strong><small>Rutina, vďaka ktorej nič dôležité neprehliadneš.</small></span><span class="guide-arrow">↗</span></button>
+        <div class="guide-preview"><img src="assets/kontrola-pred-zaberom.jpg" alt="Ťahák Kontrola pred záberom" loading="eager"></div>
       </article>
-
       <article class="guide" id="expozicia" data-category="foundation" data-title="Expozičný trojuholník" data-image="assets/expozicny-trojuholnik.jpg">
-        <button class="guide-open" type="button" aria-label="Otvoriť Expozičný trojuholník">
-          <span class="guide-number">02</span><span class="guide-copy"><span class="guide-kicker">Mentálny model</span><strong>Expozičný trojuholník</strong><span>Clona, čas a ISO bez zbytočnej teórie.</span></span><span class="guide-arrow" aria-hidden="true">↗</span>
-        </button>
-        <div class="guide-preview"><img src="assets/expozicny-trojuholnik.jpg" alt="Ručne písaný ťahák Expozičný trojuholník" loading="lazy"></div>
+        <button class="guide-open" type="button"><span class="guide-number">02</span><span class="guide-copy"><strong>Expozičný trojuholník</strong><small>Pochop vzťah medzi clonou, časom a ISO.</small></span><span class="guide-arrow">↗</span></button>
+        <div class="guide-preview"><img src="assets/expozicny-trojuholnik.jpg" alt="Ťahák Expozičný trojuholník" loading="lazy"></div>
       </article>
-
       <article class="guide" id="mesto" data-category="scene" data-title="Ľudia v meste" data-image="assets/ludia-v-meste.jpg">
-        <button class="guide-open" type="button" aria-label="Otvoriť Ľudia v meste">
-          <span class="guide-number">03</span><span class="guide-copy"><span class="guide-kicker">24 mm · ulica</span><strong>Ľudia v meste</strong><span>Človek v prostredí, chôdza a mestský moment.</span></span><span class="guide-arrow" aria-hidden="true">↗</span>
-        </button>
-        <div class="guide-preview"><img src="assets/ludia-v-meste.jpg" alt="Ručne písaný ťahák Ľudia v meste" loading="lazy"></div>
+        <button class="guide-open" type="button"><span class="guide-number">03</span><span class="guide-copy"><strong>Ľudia v meste</strong><small>Človek v prostredí, pohyb a mestský moment.</small></span><span class="guide-arrow">↗</span></button>
+        <div class="guide-preview"><img src="assets/ludia-v-meste.jpg" alt="Ťahák Ľudia v meste" loading="lazy"></div>
       </article>
-
       <article class="guide" id="reportaz" data-category="scene" data-title="Reportáž" data-image="assets/reportaz.jpg">
-        <button class="guide-open" type="button" aria-label="Otvoriť Reportáž">
-          <span class="guide-number">04</span><span class="guide-copy"><span class="guide-kicker">Príbeh v obrazoch</span><strong>Reportáž</strong><span>Celok, situácia, človek, detail a záver.</span></span><span class="guide-arrow" aria-hidden="true">↗</span>
-        </button>
-        <div class="guide-preview"><img src="assets/reportaz.jpg" alt="Ručne písaný ťahák Reportážna fotografia" loading="lazy"></div>
+        <button class="guide-open" type="button"><span class="guide-number">04</span><span class="guide-copy"><strong>Reportáž</strong><small>Rozprávaj príbeh celkom, človekom a detailom.</small></span><span class="guide-arrow">↗</span></button>
+        <div class="guide-preview"><img src="assets/reportaz.jpg" alt="Ťahák Reportáž" loading="lazy"></div>
       </article>
-
       <article class="guide" id="portret" data-category="scene" data-title="Portrét" data-image="assets/portret.jpg">
-        <button class="guide-open" type="button" aria-label="Otvoriť Portrét">
-          <span class="guide-number">05</span><span class="guide-copy"><span class="guide-kicker">40 mm · človek</span><strong>Portrét</strong><span>Oko, mäkké svetlo, odstup a pokojné pozadie.</span></span><span class="guide-arrow" aria-hidden="true">↗</span>
-        </button>
-        <div class="guide-preview"><img src="assets/portret.jpg" alt="Ručne písaný ťahák Portrétna fotografia" loading="lazy"></div>
+        <button class="guide-open" type="button"><span class="guide-number">05</span><span class="guide-copy"><strong>Portrét</strong><small>Oko, prirodzené svetlo a pokojné pozadie.</small></span><span class="guide-arrow">↗</span></button>
+        <div class="guide-preview"><img src="assets/portret.jpg" alt="Ťahák Portrét" loading="lazy"></div>
       </article>
-
       <article class="guide" id="krajina" data-category="scene" data-title="Krajina" data-image="assets/krajina.jpg">
-        <button class="guide-open" type="button" aria-label="Otvoriť Krajinu">
-          <span class="guide-number">06</span><span class="guide-copy"><span class="guide-kicker">18–35 mm · priestor</span><strong>Krajina</strong><span>Popredie, stred, pozadie a práca so svetlom.</span></span><span class="guide-arrow" aria-hidden="true">↗</span>
-        </button>
-        <div class="guide-preview"><img src="assets/krajina.jpg" alt="Ručne písaný ťahák Fotografovanie krajiny" loading="lazy"></div>
+        <button class="guide-open" type="button"><span class="guide-number">06</span><span class="guide-copy"><strong>Krajina</strong><small>Popredie, stred, pozadie a práca so svetlom.</small></span><span class="guide-arrow">↗</span></button>
+        <div class="guide-preview"><img src="assets/krajina.jpg" alt="Ťahák Krajina" loading="lazy"></div>
       </article>
-
       <article class="guide" id="architektura" data-category="scene" data-title="Architektúra" data-image="assets/architektura.jpg">
-        <button class="guide-open" type="button" aria-label="Otvoriť Architektúru">
-          <span class="guide-number">07</span><span class="guide-copy"><span class="guide-kicker">Línie · geometria</span><strong>Architektúra</strong><span>Perspektíva, rovné línie, rytmus a detaily.</span></span><span class="guide-arrow" aria-hidden="true">↗</span>
-        </button>
-        <div class="guide-preview"><img src="assets/architektura.jpg" alt="Ručne písaný ťahák Fotografovanie architektúry" loading="lazy"></div>
+        <button class="guide-open" type="button"><span class="guide-number">07</span><span class="guide-copy"><strong>Architektúra</strong><small>Perspektíva, rovné línie, rytmus a detaily.</small></span><span class="guide-arrow">↗</span></button>
+        <div class="guide-preview"><img src="assets/architektura.jpg" alt="Ťahák Architektúra" loading="lazy"></div>
       </article>
     </section>
   </main>
 
-  <footer><span>Fotografický zápisník</span><span>Uč sa v teréne, nie iba doma.</span></footer>
+  <footer><strong>Fotografický zápisník</strong><span>Malý fotoaparát. Veľké možnosti.</span><span id="counter">7 ťahákov</span></footer>
 
   <dialog class="viewer" id="viewer">
-    <div class="viewer-bar">
-      <div><span class="viewer-label">Otvorený ťahák</span><strong id="viewerTitle"></strong></div>
-      <div class="viewer-actions">
-        <a id="downloadLink" class="download" download>Stiahnuť</a>
-        <button id="closeViewer" type="button" aria-label="Zavrieť detail">×</button>
-      </div>
-    </div>
-    <div class="viewer-content">
-      <div class="viewer-stage"><img id="viewerImage" alt=""></div>
-      <aside class="viewer-context" aria-label="Kontext k téme">
-        <div class="context-block"><span class="context-label">Kedy ho použiť</span><p id="contextWhen"></p></div>
-        <div class="context-block"><span class="context-label">Začni takto</span><p id="contextStart"></p></div>
-        <div class="context-block"><span class="context-label">Sleduj najmä</span><p id="contextWatch"></p></div>
-        <div class="context-task"><span class="context-label">Úloha do terénu</span><p id="contextTask"></p></div>
-      </aside>
-    </div>
-    <div class="viewer-nav">
-      <button id="prevGuide" type="button">← Predošlý</button>
-      <span id="viewerPosition"></span>
-      <button id="nextGuide" type="button">Ďalší →</button>
-    </div>
+    <div class="viewer-bar"><div><span>Otvorený ťahák</span><strong id="viewerTitle"></strong></div><div class="viewer-actions"><a id="downloadLink" class="download" download>Stiahnuť</a><button id="closeViewer" type="button" aria-label="Zavrieť">×</button></div></div>
+    <div class="viewer-content"><div class="viewer-stage"><img id="viewerImage" alt=""></div><aside class="viewer-context"><div class="context-block"><span>Kedy ho použiť</span><p id="contextWhen"></p></div><div class="context-block"><span>Začni takto</span><p id="contextStart"></p></div><div class="context-block"><span>Sleduj najmä</span><p id="contextWatch"></p></div><div class="context-task"><span>Úloha do terénu</span><p id="contextTask"></p></div></aside></div>
+    <div class="viewer-nav"><button id="prevGuide" type="button">← Predošlý</button><span id="viewerPosition"></span><button id="nextGuide" type="button">Ďalší →</button></div>
   </dialog>
-
   <script src="app.js"></script>
 </body>
 </html>
