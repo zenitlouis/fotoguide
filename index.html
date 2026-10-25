@@ -15,7 +15,11 @@
 .practice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.2rem;margin:2rem 0}
 .practice-grid article{padding:1.5rem;border:1px solid var(--line);background:var(--cream)}
 html[lang="sk"] .practice-language[lang="en"],html[lang="en"] .practice-language[lang="sk"]{display:none}
-.practice-entry{display:inline-block;margin-top:1.5rem}
+.practice-entry{display:inline-block;margin:0 0 1.2rem;padding:.9rem 1.2rem;background:var(--brick);color:#fff;border-radius:.4rem;text-decoration:none;font-weight:800}
+.practice-entry:hover{filter:brightness(1.1)}
+.practice-contents{display:block;padding:1.1rem;background:var(--brick);color:#fff;text-decoration:none;font-weight:800;line-height:1.5}
+.practice-contents small{display:block;font-weight:400}
+html[lang="sk"] .practice-entry [lang="en"],html[lang="en"] .practice-entry [lang="sk"],html[lang="sk"] .practice-contents [lang="en"],html[lang="en"] .practice-contents [lang="sk"]{display:none}
 @media(max-width:650px){.practice{margin-inline:4px;padding:2rem 1.25rem}.practice-grid{grid-template-columns:1fr}}
 </style>
 </head>
@@ -37,7 +41,7 @@ html[lang="sk"] .practice-language[lang="en"],html[lang="en"] .practice-language
         <p class="eyebrow">Canon EOS 100D · praktická príručka</p>
         <h1>Menej tápať.<br><em>Viac fotografovať.</em></h1>
         <p>Deväť ťahákov, ktoré ti pomôžu rýchlejšie pochopiť fotoaparát, lepšie vidieť svet a fotografovať s väčšou istotou.</p>
-        <a class="practice-entry" href="#vyzvy"><span lang="sk">Fotografické výzvy</span> / Photography challenges →</a>
+        <a class="practice-entry" href="#vyzvy"><span lang="sk">Začni tu: Fotografické výzvy →</span><span lang="en">Start here: Photography challenges →</span></a>
         <nav class="filters" aria-label="Filtrovanie tém">
           <button class="filter active" type="button" data-filter="all" aria-pressed="true">Všetko</button>
           <button class="filter" type="button" data-filter="scene" aria-pressed="false">Situácie</button>
@@ -46,6 +50,7 @@ html[lang="sk"] .practice-language[lang="en"],html[lang="en"] .practice-language
       </div>
       <aside class="chapter-card" aria-label="Obsah zápisníka">
         <div class="chapter-head"><span>Obsah zápisníka</span><b>9 kapitol</b></div>
+        <a class="practice-contents" href="#vyzvy"><span lang="sk">Fotografické výzvy →<small>4 témy · postupný tréning na 2–3 týždne pre každú tému</small></span><span lang="en">Photography challenges →<small>4 themes · 2–3 weeks of practice per theme</small></span></a>
         <nav class="chapter-index" aria-label="Prejsť na kapitolu">
           <a href="#kontrola"><i>01</i><strong>Kontrola pred záberom</strong><span>→</span></a>
           <a href="#expozicia"><i>02</i><strong>Expozičný trojuholník</strong><span>→</span></a>
