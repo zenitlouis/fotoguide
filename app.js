@@ -85,7 +85,7 @@ function applyLanguage(language){
   guide.querySelector('.guide-copy strong').textContent=item.title;
   guide.querySelector('.guide-copy small').textContent=item.subtitle;
   guide.querySelector('.guide-preview img').src=image;
-  document.querySelectorAll('.chapter-index strong')[i].textContent=item.title;
+  document.querySelectorAll('.chapter-index a:not(.practice-contents) strong')[i].textContent=item.title;
  });
  document.querySelector('#counter').textContent=t.count(guides.filter(g=>!g.hidden).length);
  if(viewer.open)showGuide(currentIndex);
@@ -132,5 +132,5 @@ themeButton.addEventListener('click',()=>{document.body.classList.toggle('light'
 
 const chapterLinks=[...document.querySelectorAll('.chapter-index a')];
 const chapterObserver=new IntersectionObserver(entries=>{const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(!visible)return;chapterLinks.forEach(link=>link.classList.toggle('active',link.getAttribute('href')===`#${visible.target.id}`))},{rootMargin:'-20% 0px -65% 0px',threshold:[0,.15,.35]});
-guides.forEach(guide=>chapterObserver.observe(guide));
+[document.querySelector('#vyzvy'),...guides].forEach(guide=>chapterObserver.observe(guide));
 applyLanguage(currentLanguage);
