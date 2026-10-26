@@ -17,8 +17,13 @@
 html[lang="sk"] .practice-language[lang="en"],html[lang="en"] .practice-language[lang="sk"]{display:none}
 .practice-entry{display:inline-block;margin:0 0 1.2rem;padding:.9rem 1.2rem;background:var(--brick);color:#fff;border-radius:.4rem;text-decoration:none;font-weight:800}
 .practice-entry:hover{filter:brightness(1.1)}
-.practice-contents{display:block;padding:1.1rem;background:var(--brick);color:#fff;text-decoration:none;font-weight:800;line-height:1.5}
-.practice-contents small{display:block;font-weight:400}
+.chapter-index .practice-contents{min-height:4.6rem;margin-bottom:.65rem;border-bottom:2px solid var(--brick);background:var(--cream);grid-template-columns:2.7rem minmax(0,1fr) auto}
+.chapter-index .practice-contents i{background:var(--brick);font:700 .62rem/1.2 system-ui,sans-serif;text-transform:uppercase;overflow-wrap:anywhere}
+.chapter-index .practice-contents i span,.chapter-index .practice-contents strong span{padding:0;font-size:inherit}
+.chapter-index .practice-contents strong{padding:.7rem .65rem .7rem 1rem;font-weight:700;line-height:1.2}
+.chapter-index .practice-contents small{display:block;margin-top:.35rem;color:var(--muted);font:400 .73rem/1.4 system-ui,sans-serif}
+.chapter-index a:focus-visible{outline:3px solid var(--brick);outline-offset:2px}
+html[lang="sk"] .practice-contents [lang="en"],html[lang="en"] .practice-contents [lang="sk"]{display:none}
 html[lang="sk"] .practice-entry [lang="en"],html[lang="en"] .practice-entry [lang="sk"],html[lang="sk"] .practice-contents [lang="en"],html[lang="en"] .practice-contents [lang="sk"]{display:none}
 @media(max-width:650px){.practice{margin-inline:4px;padding:2rem 1.25rem}.practice-grid{grid-template-columns:1fr}}
 </style>
@@ -50,8 +55,8 @@ html[lang="sk"] .practice-entry [lang="en"],html[lang="en"] .practice-entry [lan
       </div>
       <aside class="chapter-card" aria-label="Obsah zápisníka">
         <div class="chapter-head"><span>Obsah zápisníka</span><b>9 kapitol</b></div>
-        <a class="practice-contents" href="#vyzvy"><span lang="sk">Fotografické výzvy →<small>4 témy · postupný tréning na 2–3 týždne pre každú tému</small></span><span lang="en">Photography challenges →<small>4 themes · 2–3 weeks of practice per theme</small></span></a>
         <nav class="chapter-index" aria-label="Prejsť na kapitolu">
+          <a class="practice-contents" href="#vyzvy"><i><span lang="sk">Prax</span><span lang="en">Practice</span></i><strong><span lang="sk">Fotografické výzvy</span><span lang="en">Photography challenges</span><small lang="sk">4 témy na precvičovanie · každá na 2–3 týždne</small><small lang="en">4 practice themes · 2–3 weeks each</small></strong><span aria-hidden="true">→</span></a>
           <a href="#kontrola"><i>01</i><strong>Kontrola pred záberom</strong><span>→</span></a>
           <a href="#expozicia"><i>02</i><strong>Expozičný trojuholník</strong><span>→</span></a>
           <a href="#mesto"><i>03</i><strong>Ľudia v meste</strong><span>→</span></a>
